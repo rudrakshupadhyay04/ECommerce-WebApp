@@ -1,0 +1,64 @@
+<% layout('layouts/boilerplate') %>
+
+<div class="row">
+    <div class="col-6 mx-auto">
+        <form action="/products" method="POST" class="needs-validation" novalidate>
+
+            <div class="mb-3">
+                <label for="naam">Name:</label>
+                <input type="text" class="form-control" name="name" id="naam" placeholder="Name of the product" required>
+
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+
+                <div class="invalid-feedback">
+                    Please enter a name of product.
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="img">Image:</label>
+                <input type="text" class="form-control" name="img" id="img" placeholder="image url of the product" required>
+
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+
+                <div class="invalid-feedback">
+                    Please enter a image of product.
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="paisa">Price:</label>
+                <input type="number" class="form-control" name="price" id="paisa" placeholder="Price of the product" required>
+
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+
+                <div class="invalid-feedback">
+                    Please enter a price of product.
+                </div>
+            </div>
+
+            <div class="mb-3">
+                <label for="desc">Description:</label>
+                <textarea class="form-control" name="desc" id="desc" rows="5" placeholder="Description of product" required></textarea>
+
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+
+                <div class="invalid-feedback">
+                    Please enter a description of product.
+                </div>
+            </div>
+
+            <button class="btn btn-sm btn-success">Add Product</button>
+
+        </form>
+    </div>
+</div>
+
